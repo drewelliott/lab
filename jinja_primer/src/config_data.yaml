@@ -1,0 +1,15 @@
+---
+hostname: router1
+lags:
+  - name: 1
+    description: BB|100G|lag1.flr01-preagg-01|LAG1|V:UNITI-CID:188054
+    port: 1/1/c1/1
+  - name: 15
+    description: BB|100G|lag15.ftpa02-bng01|LAG15|V:UNITI-CID:188052
+    port: 1/2/c1/1
+  - name: 41
+    description: OLT|100G|lag41.flr05-na0507|LAG41|V:VENDOR-TYPE
+    port: 1/1/c2/1
+  - name: 54
+    description: OLT|100G|lag54.foe01-na0501|LAG54|V:LOCAL
+    port: 1/2/c5/1

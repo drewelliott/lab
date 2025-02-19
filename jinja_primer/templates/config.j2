@@ -1,0 +1,31 @@
+
+configure {
+    card 1 {
+        mda 1 {
+            mda-type m5-100g-qsfp28
+        }
+        mda 2 {
+            mda-type m5-100g-qsfp28
+        }
+    }
+    chassis router chassis-number 1 {
+    }
+{% for lag in lags %}
+    lag "lag-{{ lag.name }}" {
+        admin-state enable
+        description "{{ lag.description }}"
+        mode hybrid
+        lacp {
+            mode active
+	{% if lag.name|string|length == 1 -%}
+	    administrative-key 3200{{ lag.name }}
+	{% elif lag.name|string|length == 2 -%}
+            administrative-key 320{{ lag.name }}
+	{% else -%}
+	    administrative-key 32{{lag.name}}
+	{% endif -%}
+        }
+	port {{ lag.port }} {
+        }
+    }
+{% endfor %}
