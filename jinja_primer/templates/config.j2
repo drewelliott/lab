@@ -17,13 +17,15 @@ configure {
         mode hybrid
         lacp {
             mode active
-	{% if lag.name|string|length == 1 -%}
-	    administrative-key 3200{{ lag.name }}
+	{% filter indent(width=16) -%}
+	{% if lag.name|string|length == 1 %}
+            administrative-key 3200{{ lag.name }}
 	{% elif lag.name|string|length == 2 -%}
             administrative-key 320{{ lag.name }}
 	{% else -%}
-	    administrative-key 32{{lag.name}}
+            administrative-key 32{{lag.name}}
 	{% endif -%}
+	{%- endfilter %}
         }
 	port {{ lag.port }} {
         }
