@@ -1,0 +1,50 @@
+drew at snoopy in git/lab/kubenet on  main *
+› docker logs clab-topo3nodesrl-core01 | grep log_mgr
+  Started log_mgr: source /etc/profile.d/sr_app_env.sh &>/dev/null; bash -lc "./sr_log_mgr" >>/var/log/srlinux/stdout/log_mgr.log 2>&1 &
+  Application log_mgr is running: PID 1927
+  Started log_mgr: source /etc/profile.d/sr_app_env.sh &>/dev/null; bash -lc "./sr_log_mgr" >>/var/log/srlinux/stdout/log_mgr.log 2>&1 &
+  Application log_mgr is running: PID 4376
+  Started log_mgr: source /etc/profile.d/sr_app_env.sh &>/dev/null; bash -lc "./sr_log_mgr" >>/var/log/srlinux/stdout/log_mgr.log 2>&1 &
+  Application log_mgr is running: PID 6239
+
+
+// From the container logs:
+
+root@core01:/var/log/srlinux/stdout# cat log_mgr.20250320_164459.log
+25-03-20 16:44:55.158346  1927 C common    configuration_listener.cc:848    SRL_FAIL_MSG  Termination handler
+========= SRL_FAIL_MSG in program: sr_log_mgr =========
+=== At: /builds/sr/srlinux/srlutil/idb/configuration_listener.cc:848
+=== rollback failure!  First error:  - Unacceptable syslog configuration
+
+ 0x5712f96e1c68, ./sr_log_mgr : srlinux::ConfigurationToolsListener::AckConfigurationSeqNum()+0x1468
+ 0x5712f96e1d25, ./sr_log_mgr : srlinux::ConfigurationToolsListener::ProcessEndOfCommitComplete()+0x25
+ 0x5712f96e8d45, ./sr_log_mgr : srlinux::idb::IdbProtoSubscription<srlinux::mgmt::proto::ConfigControlKey, srlinux::mgmt::proto::ConfigControlData>::CallbackParse(srlinux::idb::SubscriptionAction const&, unsigned char const*, unsigned int, unsigned char const*, unsigned int)+0x325
+ 0x5712f974e76d, ./sr_log_mgr : srlinux::idb::server_if::SubscriptionWithSyncResponseHandler::ParseResponse(unsigned char*, unsigned int)+0xfd
+ 0x5712f96f3940, ./sr_log_mgr : srlinux::IdbClientRxCallback(HasyncClientHandle*, void*, unsigned char*, unsigned int)+0xa0
+ 0x5712f97a4b5f, ./sr_log_mgr : HasyncClientRxUserCallbackChannel()+0xaf
+ 0x5712f97a4d03, ./sr_log_mgr : HasyncClientRxUserCallback()+0xa3
+ 0x5712f986cb84, ./sr_log_mgr : ELoopProcessUserEvents(ELoopHandle*, unsigned int)+0xa4
+ 0x5712f986d420, ./sr_log_mgr : ELoopFireAndExit()+0x30
+ 0x5712f986d9dd, ./sr_log_mgr : ELoopMain()+0x2d
+ 0x5712f965d8b8, ./sr_log_mgr : srlinux::log_mgr::LogMgr::Run()+0x3b8
+ 0x5712f9658ef9, ./sr_log_mgr : main()+0x119
+ 0x748828ac524a, /lib/x86_64-linux-gnu/libc.so.6 : ()+0x2724a
+ 0x748828ac5305, /lib/x86_64-linux-gnu/libc.so.6 : __libc_start_main()+0x85
+ 0x5712f9658081, ./sr_log_mgr : _start()+0x21
+==============================
+=== Program: sr_log_mgr
+/builds/sr/srlinux/srlutil/idb/configuration_listener.cc:848 | rollback failure!  First error:  - Unacceptable syslog configuration
+*
+* Note: COREDUMP report may not have a core file. /proc/sys/kernel/core_pattern does not have installed sr_host_core_catcher.sh
+*
+
+sr_log_mgr: [1927/1927] Direct call to sr_core_dump.sh *****.
+
+
+2025-03-20 16:44:55 sr_core_dump.sh: to report: /var/core/coredump-sr_log_mgr-20250320_164455-1927-6
+/opt/srlinux/bin/sr_core_dump.sh: line 186:  3331 Killed                  /usr/bin/sleep 17
+
+2025-03-20 16:44:56 sr_core_dump.sh: this script ran in the context of the process that failed.
+
+2025-03-20 16:44:59 sr_core_dump.sh: generated coredump for "sr_log_mgr" by direct call at "/var/core/coredump-sr_log_mgr[no_core]-20250320_164455-1927-6.tar.gz" (4 sec)
+root@core01:/var/log/srlinux/stdout#

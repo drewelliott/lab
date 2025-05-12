@@ -1,0 +1,1228 @@
+[
+  {
+    "source": "172.20.20.3:57401",
+    "timestamp": 1742835156999222143,
+    "time": "2025-03-24T16:52:36.999222143Z",
+    "updates": [
+      {
+        "Path": "",
+        "values": {
+          "": {
+            "srl_nokia-network-instance:network-instance": [
+              {
+                "name": "default",
+                "route-table": {
+                  "srl_nokia-ip-route-tables:ipv4-unicast": {
+                    "route": [
+                      {
+                        "active": true,
+                        "fib-programming": {
+                          "last-failed-operation-type": "none",
+                          "last-successful-operation-timestamp": "2025-03-24T13:35:09.452Z",
+                          "last-successful-operation-type": "add",
+                          "pending-operation-type": "none",
+                          "suppressed": false
+                        },
+                        "id": 4,
+                        "ipv4-prefix": "10.0.0.1/32",
+                        "last-app-update": "2025-03-24T13:35:09.450Z",
+                        "leakable": false,
+                        "metric": 0,
+                        "next-hop-group": "41649525527",
+                        "next-hop-group-network-instance": "default",
+                        "origin-network-instance": "default",
+                        "preference": 0,
+                        "resilient-hash": false,
+                        "route-owner": "net_inst_mgr",
+                        "route-type": "srl_nokia-common:host"
+                      },
+                      {
+                        "active": true,
+                        "fib-programming": {
+                          "last-failed-operation-type": "none",
+                          "last-successful-operation-timestamp": "2025-03-24T13:35:20.445Z",
+                          "last-successful-operation-type": "add",
+                          "pending-operation-type": "none",
+                          "suppressed": false
+                        },
+                        "id": 0,
+                        "ipv4-prefix": "10.0.0.2/32",
+                        "last-app-update": "2025-03-24T13:35:20.443Z",
+                        "leakable": false,
+                        "metric": 10,
+                        "next-hop-group": "41649525531",
+                        "next-hop-group-network-instance": "default",
+                        "origin-network-instance": "default",
+                        "preference": 18,
+                        "resilient-hash": false,
+                        "route-owner": "isis_mgr",
+                        "route-type": "srl_nokia-common:isis"
+                      },
+                      {
+                        "active": true,
+                        "fib-programming": {
+                          "last-failed-operation-type": "none",
+                          "last-successful-operation-timestamp": "2025-03-24T13:35:20.445Z",
+                          "last-successful-operation-type": "add",
+                          "pending-operation-type": "none",
+                          "suppressed": false
+                        },
+                        "id": 0,
+                        "ipv4-prefix": "10.0.0.3/32",
+                        "last-app-update": "2025-03-24T13:35:20.443Z",
+                        "leakable": false,
+                        "metric": 20,
+                        "next-hop-group": "41649525531",
+                        "next-hop-group-network-instance": "default",
+                        "origin-network-instance": "default",
+                        "preference": 18,
+                        "resilient-hash": false,
+                        "route-owner": "isis_mgr",
+                        "route-type": "srl_nokia-common:isis"
+                      },
+                      {
+                        "active": true,
+                        "fib-programming": {
+                          "last-failed-operation-type": "none",
+                          "last-successful-operation-timestamp": "2025-03-24T13:35:15.049Z",
+                          "last-successful-operation-type": "add",
+                          "pending-operation-type": "none",
+                          "suppressed": false
+                        },
+                        "id": 2,
+                        "ipv4-prefix": "10.1.2.0/30",
+                        "last-app-update": "2025-03-24T13:35:15.046Z",
+                        "leakable": false,
+                        "metric": 0,
+                        "next-hop-group": "41649525528",
+                        "next-hop-group-network-instance": "default",
+                        "origin-network-instance": "default",
+                        "preference": 0,
+                        "resilient-hash": false,
+                        "route-owner": "net_inst_mgr",
+                        "route-type": "srl_nokia-common:local"
+                      },
+                      {
+                        "active": true,
+                        "fib-programming": {
+                          "last-failed-operation-type": "none",
+                          "last-successful-operation-timestamp": "2025-03-24T13:35:15.049Z",
+                          "last-successful-operation-type": "add",
+                          "pending-operation-type": "none",
+                          "suppressed": false
+                        },
+                        "id": 2,
+                        "ipv4-prefix": "10.1.2.1/32",
+                        "last-app-update": "2025-03-24T13:35:15.047Z",
+                        "leakable": false,
+                        "metric": 0,
+                        "next-hop-group": "41649525529",
+                        "next-hop-group-network-instance": "default",
+                        "origin-network-instance": "default",
+                        "preference": 0,
+                        "resilient-hash": false,
+                        "route-owner": "net_inst_mgr",
+                        "route-type": "srl_nokia-common:host"
+                      },
+                      {
+                        "active": true,
+                        "fib-programming": {
+                          "last-failed-operation-type": "none",
+                          "last-successful-operation-timestamp": "2025-03-24T13:35:15.049Z",
+                          "last-successful-operation-type": "add",
+                          "pending-operation-type": "none",
+                          "suppressed": false
+                        },
+                        "id": 2,
+                        "ipv4-prefix": "10.1.2.3/32",
+                        "last-app-update": "2025-03-24T13:35:15.047Z",
+                        "leakable": false,
+                        "metric": 0,
+                        "next-hop-group": "41649525530",
+                        "next-hop-group-network-instance": "default",
+                        "origin-network-instance": "default",
+                        "preference": 0,
+                        "resilient-hash": false,
+                        "route-owner": "net_inst_mgr",
+                        "route-type": "srl_nokia-common:host"
+                      },
+                      {
+                        "active": true,
+                        "fib-programming": {
+                          "last-failed-operation-type": "none",
+                          "last-successful-operation-timestamp": "2025-03-24T13:35:20.445Z",
+                          "last-successful-operation-type": "add",
+                          "pending-operation-type": "none",
+                          "suppressed": false
+                        },
+                        "id": 0,
+                        "ipv4-prefix": "10.2.3.0/30",
+                        "last-app-update": "2025-03-24T13:35:20.443Z",
+                        "leakable": false,
+                        "metric": 20,
+                        "next-hop-group": "41649525531",
+                        "next-hop-group-network-instance": "default",
+                        "origin-network-instance": "default",
+                        "preference": 18,
+                        "resilient-hash": false,
+                        "route-owner": "isis_mgr",
+                        "route-type": "srl_nokia-common:isis"
+                      },
+                      {
+                        "active": true,
+                        "fib-programming": {
+                          "last-failed-operation-type": "none",
+                          "last-successful-operation-timestamp": "2025-03-24T13:35:09.451Z",
+                          "last-successful-operation-type": "add",
+                          "pending-operation-type": "none",
+                          "suppressed": false
+                        },
+                        "id": 3,
+                        "ipv4-prefix": "192.168.99.1/32",
+                        "last-app-update": "2025-03-24T13:35:09.449Z",
+                        "leakable": false,
+                        "metric": 0,
+                        "next-hop-group": "41649525526",
+                        "next-hop-group-network-instance": "default",
+                        "origin-network-instance": "default",
+                        "preference": 0,
+                        "resilient-hash": false,
+                        "route-owner": "net_inst_mgr",
+                        "route-type": "srl_nokia-common:host"
+                      },
+                      {
+                        "active": true,
+                        "fib-programming": {
+                          "last-failed-operation-type": "none",
+                          "last-successful-operation-timestamp": "2025-03-24T13:35:25.916Z",
+                          "last-successful-operation-type": "add",
+                          "pending-operation-type": "none",
+                          "suppressed": false
+                        },
+                        "id": 0,
+                        "ipv4-prefix": "192.168.99.3/32",
+                        "last-app-update": "2025-03-24T13:35:25.915Z",
+                        "leakable": false,
+                        "metric": 20,
+                        "next-hop-group": "41649525535",
+                        "next-hop-group-network-instance": "default",
+                        "origin-network-instance": "default",
+                        "preference": 170,
+                        "resilient-hash": false,
+                        "route-owner": "bgp_mgr",
+                        "route-type": "srl_nokia-common:bgp"
+                      }
+                    ],
+                    "route-summary": {
+                      "route-type": [
+                        {
+                          "active-routes": 1,
+                          "ip-route-type-name": "srl_nokia-common:bgp"
+                        },
+                        {
+                          "active-routes": 4,
+                          "ip-route-type-name": "srl_nokia-common:host"
+                        },
+                        {
+                          "active-routes": 3,
+                          "ip-route-type-name": "srl_nokia-common:isis"
+                        },
+                        {
+                          "active-routes": 1,
+                          "ip-route-type-name": "srl_nokia-common:local"
+                        }
+                      ]
+                    },
+                    "statistics": {
+                      "active-routes": 9,
+                      "active-routes-with-ecmp": 0,
+                      "fib-failed-routes": 0,
+                      "resilient-hash-routes": 0,
+                      "total-routes": "9"
+                    }
+                  },
+                  "srl_nokia-ip-route-tables:ipv6-unicast": {
+                    "route": [
+                      {
+                        "active": true,
+                        "fib-programming": {
+                          "last-failed-operation-type": "none",
+                          "last-successful-operation-timestamp": "2025-03-24T14:33:23.401Z",
+                          "last-successful-operation-type": "add",
+                          "pending-operation-type": "none",
+                          "suppressed": false
+                        },
+                        "id": 4,
+                        "ipv6-prefix": "2001::10:0:0:0/127",
+                        "last-app-update": "2025-03-24T14:33:23.398Z",
+                        "leakable": false,
+                        "metric": 0,
+                        "next-hop-group": "41649525536",
+                        "next-hop-group-network-instance": "default",
+                        "origin-network-instance": "default",
+                        "preference": 0,
+                        "resilient-hash": false,
+                        "route-owner": "net_inst_mgr",
+                        "route-type": "srl_nokia-common:local"
+                      },
+                      {
+                        "active": true,
+                        "fib-programming": {
+                          "last-failed-operation-type": "none",
+                          "last-successful-operation-timestamp": "2025-03-24T14:33:23.401Z",
+                          "last-successful-operation-type": "add",
+                          "pending-operation-type": "none",
+                          "suppressed": false
+                        },
+                        "id": 4,
+                        "ipv6-prefix": "2001::10:0:0:1/128",
+                        "last-app-update": "2025-03-24T14:33:23.398Z",
+                        "leakable": false,
+                        "metric": 0,
+                        "next-hop-group": "41649525527",
+                        "next-hop-group-network-instance": "default",
+                        "origin-network-instance": "default",
+                        "preference": 0,
+                        "resilient-hash": false,
+                        "route-owner": "net_inst_mgr",
+                        "route-type": "srl_nokia-common:host"
+                      },
+                      {
+                        "active": true,
+                        "fib-programming": {
+                          "last-failed-operation-type": "none",
+                          "last-successful-operation-timestamp": "2025-03-24T14:34:55.001Z",
+                          "last-successful-operation-type": "add",
+                          "pending-operation-type": "none",
+                          "suppressed": false
+                        },
+                        "id": 3,
+                        "ipv6-prefix": "2001::192:168:99:0/127",
+                        "last-app-update": "2025-03-24T14:34:54.999Z",
+                        "leakable": false,
+                        "metric": 0,
+                        "next-hop-group": "41649525538",
+                        "next-hop-group-network-instance": "default",
+                        "origin-network-instance": "default",
+                        "preference": 0,
+                        "resilient-hash": false,
+                        "route-owner": "net_inst_mgr",
+                        "route-type": "srl_nokia-common:local"
+                      },
+                      {
+                        "active": true,
+                        "fib-programming": {
+                          "last-failed-operation-type": "none",
+                          "last-successful-operation-timestamp": "2025-03-24T14:34:55.001Z",
+                          "last-successful-operation-type": "add",
+                          "pending-operation-type": "none",
+                          "suppressed": false
+                        },
+                        "id": 3,
+                        "ipv6-prefix": "2001::192:168:99:1/128",
+                        "last-app-update": "2025-03-24T14:34:54.999Z",
+                        "leakable": false,
+                        "metric": 0,
+                        "next-hop-group": "41649525526",
+                        "next-hop-group-network-instance": "default",
+                        "origin-network-instance": "default",
+                        "preference": 0,
+                        "resilient-hash": false,
+                        "route-owner": "net_inst_mgr",
+                        "route-type": "srl_nokia-common:host"
+                      },
+                      {
+                        "active": true,
+                        "fib-programming": {
+                          "last-failed-operation-type": "none",
+                          "last-successful-operation-timestamp": "2025-03-24T14:37:17.379Z",
+                          "last-successful-operation-type": "add",
+                          "pending-operation-type": "none",
+                          "suppressed": false
+                        },
+                        "id": 2,
+                        "ipv6-prefix": "2001:db8::/64",
+                        "last-app-update": "2025-03-24T14:37:17.377Z",
+                        "leakable": false,
+                        "metric": 0,
+                        "next-hop-group": "41649525539",
+                        "next-hop-group-network-instance": "default",
+                        "origin-network-instance": "default",
+                        "preference": 0,
+                        "resilient-hash": false,
+                        "route-owner": "net_inst_mgr",
+                        "route-type": "srl_nokia-common:local"
+                      },
+                      {
+                        "active": true,
+                        "fib-programming": {
+                          "last-failed-operation-type": "none",
+                          "last-successful-operation-timestamp": "2025-03-24T14:37:17.379Z",
+                          "last-successful-operation-type": "add",
+                          "pending-operation-type": "none",
+                          "suppressed": false
+                        },
+                        "id": 2,
+                        "ipv6-prefix": "2001:db8::10:1:2:1/128",
+                        "last-app-update": "2025-03-24T14:37:17.378Z",
+                        "leakable": false,
+                        "metric": 0,
+                        "next-hop-group": "41649525529",
+                        "next-hop-group-network-instance": "default",
+                        "origin-network-instance": "default",
+                        "preference": 0,
+                        "resilient-hash": false,
+                        "route-owner": "net_inst_mgr",
+                        "route-type": "srl_nokia-common:host"
+                      }
+                    ],
+                    "route-summary": {
+                      "route-type": [
+                        {
+                          "ip-route-type-name": "srl_nokia-common:bgp"
+                        },
+                        {
+                          "active-routes": 3,
+                          "ip-route-type-name": "srl_nokia-common:host"
+                        },
+                        {
+                          "ip-route-type-name": "srl_nokia-common:isis"
+                        },
+                        {
+                          "active-routes": 3,
+                          "ip-route-type-name": "srl_nokia-common:local"
+                        }
+                      ]
+                    },
+                    "statistics": {
+                      "active-routes": 6,
+                      "active-routes-with-ecmp": 0,
+                      "fib-failed-routes": 0,
+                      "resilient-hash-routes": 0,
+                      "total-routes": "6"
+                    }
+                  },
+                  "srl_nokia-ip-route-tables:next-hop": [
+                    {
+                      "index": "3",
+                      "type": "srl_nokia-ip-route-tables:broadcast"
+                    },
+                    {
+                      "index": "41649525525",
+                      "type": "srl_nokia-ip-route-tables:extract"
+                    },
+                    {
+                      "index": "41649525526",
+                      "type": "srl_nokia-ip-route-tables:extract"
+                    },
+                    {
+                      "index": "41649525527",
+                      "ip-address": "10.1.2.1",
+                      "subinterface": "ethernet-1/1.0",
+                      "type": "srl_nokia-ip-route-tables:direct"
+                    },
+                    {
+                      "index": "41649525528",
+                      "type": "srl_nokia-ip-route-tables:extract"
+                    },
+                    {
+                      "index": "41649525529",
+                      "ip-address": "10.1.2.2",
+                      "subinterface": "ethernet-1/1.0",
+                      "type": "srl_nokia-ip-route-tables:direct"
+                    },
+                    {
+                      "index": "41649525530",
+                      "ip-address": "10.1.2.2",
+                      "mpls": {
+                        "entropy-label-transmit": false,
+                        "pushed-mpls-label-stack": [
+                          200
+                        ]
+                      },
+                      "subinterface": "ethernet-1/1.0",
+                      "type": "srl_nokia-ip-route-tables:mpls"
+                    },
+                    {
+                      "index": "41649525531",
+                      "ip-address": "10.1.2.2",
+                      "mpls": {
+                        "entropy-label-transmit": false,
+                        "pushed-mpls-label-stack": [
+                          201
+                        ]
+                      },
+                      "subinterface": "ethernet-1/1.0",
+                      "type": "srl_nokia-ip-route-tables:mpls"
+                    },
+                    {
+                      "index": "41649525532",
+                      "network-instance": "default",
+                      "resolving-tunnel": {
+                        "ip-prefix": "10.0.0.3/32",
+                        "tunnel-id": 65538,
+                        "tunnel-owner": "ldp_mgr",
+                        "tunnel-type": "srl_nokia-common:ldp"
+                      },
+                      "type": "srl_nokia-ip-route-tables:tunnel"
+                    },
+                    {
+                      "index": "41649525533",
+                      "ip-address": "10.0.0.3",
+                      "resolving-tunnel": {
+                        "ip-prefix": "10.0.0.3/32",
+                        "next-hop-group": "41649525534",
+                        "tunnel-id": 65538,
+                        "tunnel-owner": "ldp_mgr",
+                        "tunnel-type": "srl_nokia-common:ldp"
+                      },
+                      "type": "srl_nokia-ip-route-tables:indirect"
+                    },
+                    {
+                      "index": "41649525534",
+                      "ip-address": "2001::10:0:0:1",
+                      "subinterface": "system0.0",
+                      "type": "srl_nokia-ip-route-tables:direct"
+                    },
+                    {
+                      "index": "41649525535",
+                      "ip-address": "2001::10:0:0:0",
+                      "subinterface": "system0.0",
+                      "type": "srl_nokia-ip-route-tables:direct"
+                    },
+                    {
+                      "index": "41649525536",
+                      "ip-address": "2001::192:168:99:1",
+                      "subinterface": "lo0.0",
+                      "type": "srl_nokia-ip-route-tables:direct"
+                    },
+                    {
+                      "index": "41649525537",
+                      "ip-address": "2001:db8::10:1:2:1",
+                      "subinterface": "ethernet-1/1.0",
+                      "type": "srl_nokia-ip-route-tables:direct"
+                    }
+                  ],
+                  "srl_nokia-ip-route-tables:next-hop-group": [
+                    {
+                      "backup-next-hop-group": "0",
+                      "fib-programming": {
+                        "last-failed-operation-type": "none",
+                        "last-successful-operation-timestamp": "2025-03-24T13:35:09.451Z",
+                        "last-successful-operation-type": "add",
+                        "pending-operation-type": "none"
+                      },
+                      "index": "41649525526",
+                      "next-hop": [
+                        {
+                          "id": 0,
+                          "next-hop": "41649525525",
+                          "resolved": "not-applicable"
+                        }
+                      ]
+                    },
+                    {
+                      "backup-next-hop-group": "0",
+                      "fib-programming": {
+                        "last-failed-operation-type": "none",
+                        "last-successful-operation-timestamp": "2025-03-24T13:35:09.452Z",
+                        "last-successful-operation-type": "add",
+                        "pending-operation-type": "none"
+                      },
+                      "index": "41649525527",
+                      "next-hop": [
+                        {
+                          "id": 0,
+                          "next-hop": "41649525526",
+                          "resolved": "not-applicable"
+                        }
+                      ]
+                    },
+                    {
+                      "backup-next-hop-group": "0",
+                      "fib-programming": {
+                        "last-failed-operation-type": "none",
+                        "last-successful-operation-timestamp": "2025-03-24T13:35:15.049Z",
+                        "last-successful-operation-type": "add",
+                        "pending-operation-type": "none"
+                      },
+                      "index": "41649525528",
+                      "next-hop": [
+                        {
+                          "id": 0,
+                          "next-hop": "41649525527",
+                          "resolved": "not-applicable"
+                        }
+                      ]
+                    },
+                    {
+                      "backup-next-hop-group": "0",
+                      "fib-programming": {
+                        "last-failed-operation-type": "none",
+                        "last-successful-operation-timestamp": "2025-03-24T13:35:15.049Z",
+                        "last-successful-operation-type": "add",
+                        "pending-operation-type": "none"
+                      },
+                      "index": "41649525529",
+                      "next-hop": [
+                        {
+                          "id": 0,
+                          "next-hop": "41649525528",
+                          "resolved": "not-applicable"
+                        }
+                      ]
+                    },
+                    {
+                      "backup-next-hop-group": "0",
+                      "fib-programming": {
+                        "last-failed-operation-type": "none",
+                        "last-successful-operation-timestamp": "2025-03-24T13:35:15.049Z",
+                        "last-successful-operation-type": "add",
+                        "pending-operation-type": "none"
+                      },
+                      "index": "41649525530",
+                      "next-hop": [
+                        {
+                          "id": 0,
+                          "next-hop": "3",
+                          "resolved": "not-applicable"
+                        }
+                      ]
+                    },
+                    {
+                      "backup-next-hop-group": "0",
+                      "fib-programming": {
+                        "last-failed-operation-type": "none",
+                        "last-successful-operation-timestamp": "2025-03-24T13:35:20.445Z",
+                        "last-successful-operation-type": "add",
+                        "pending-operation-type": "none"
+                      },
+                      "index": "41649525531",
+                      "next-hop": [
+                        {
+                          "id": 0,
+                          "next-hop": "41649525529",
+                          "resolved": "not-applicable"
+                        }
+                      ]
+                    },
+                    {
+                      "backup-next-hop-group": "0",
+                      "fib-programming": {
+                        "last-failed-operation-type": "none",
+                        "last-successful-operation-timestamp": "2025-03-24T13:35:20.687Z",
+                        "last-successful-operation-type": "add",
+                        "pending-operation-type": "none"
+                      },
+                      "index": "41649525532",
+                      "next-hop": [
+                        {
+                          "id": 0,
+                          "next-hop": "41649525530",
+                          "resolved": "not-applicable"
+                        }
+                      ]
+                    },
+                    {
+                      "backup-next-hop-group": "0",
+                      "fib-programming": {
+                        "last-failed-operation-type": "none",
+                        "last-successful-operation-timestamp": "2025-03-24T13:35:20.733Z",
+                        "last-successful-operation-type": "add",
+                        "pending-operation-type": "none"
+                      },
+                      "index": "41649525533",
+                      "next-hop": [
+                        {
+                          "id": 0,
+                          "next-hop": "41649525531",
+                          "resolved": "not-applicable"
+                        }
+                      ]
+                    },
+                    {
+                      "backup-next-hop-group": "0",
+                      "fib-programming": {
+                        "last-failed-operation-type": "none",
+                        "last-successful-operation-timestamp": "2025-03-24T13:35:20.734Z",
+                        "last-successful-operation-type": "add",
+                        "pending-operation-type": "none"
+                      },
+                      "index": "41649525534",
+                      "next-hop": [
+                        {
+                          "id": 0,
+                          "next-hop": "41649525532",
+                          "resolved": "not-applicable"
+                        }
+                      ]
+                    },
+                    {
+                      "backup-next-hop-group": "0",
+                      "fib-programming": {
+                        "last-failed-operation-type": "none",
+                        "last-successful-operation-timestamp": "2025-03-24T13:35:25.916Z",
+                        "last-successful-operation-type": "add",
+                        "pending-operation-type": "none"
+                      },
+                      "index": "41649525535",
+                      "next-hop": [
+                        {
+                          "id": 0,
+                          "next-hop": "41649525533",
+                          "resolved": "true"
+                        }
+                      ]
+                    },
+                    {
+                      "backup-next-hop-group": "0",
+                      "fib-programming": {
+                        "last-failed-operation-type": "none",
+                        "last-successful-operation-timestamp": "2025-03-24T14:33:23.401Z",
+                        "last-successful-operation-type": "add",
+                        "pending-operation-type": "none"
+                      },
+                      "index": "41649525536",
+                      "next-hop": [
+                        {
+                          "id": 0,
+                          "next-hop": "41649525534",
+                          "resolved": "not-applicable"
+                        }
+                      ]
+                    },
+                    {
+                      "backup-next-hop-group": "0",
+                      "fib-programming": {
+                        "last-failed-operation-type": "none",
+                        "last-successful-operation-timestamp": "2025-03-24T14:33:23.402Z",
+                        "last-successful-operation-type": "add",
+                        "pending-operation-type": "none"
+                      },
+                      "index": "41649525537",
+                      "next-hop": [
+                        {
+                          "id": 0,
+                          "next-hop": "41649525535",
+                          "resolved": "not-applicable"
+                        }
+                      ]
+                    },
+                    {
+                      "backup-next-hop-group": "0",
+                      "fib-programming": {
+                        "last-failed-operation-type": "none",
+                        "last-successful-operation-timestamp": "2025-03-24T14:34:55.001Z",
+                        "last-successful-operation-type": "add",
+                        "pending-operation-type": "none"
+                      },
+                      "index": "41649525538",
+                      "next-hop": [
+                        {
+                          "id": 0,
+                          "next-hop": "41649525536",
+                          "resolved": "not-applicable"
+                        }
+                      ]
+                    },
+                    {
+                      "backup-next-hop-group": "0",
+                      "fib-programming": {
+                        "last-failed-operation-type": "none",
+                        "last-successful-operation-timestamp": "2025-03-24T14:37:17.379Z",
+                        "last-successful-operation-type": "add",
+                        "pending-operation-type": "none"
+                      },
+                      "index": "41649525539",
+                      "next-hop": [
+                        {
+                          "id": 0,
+                          "next-hop": "41649525537",
+                          "resolved": "not-applicable"
+                        }
+                      ]
+                    }
+                  ],
+                  "srl_nokia-mpls-route-tables:mpls": {
+                    "label-entry": [
+                      {
+                        "entry-type": "srl_nokia-common:ldp",
+                        "label-value": 100,
+                        "last-app-update": "2025-03-24T13:35:20.682Z",
+                        "next-network-instance": "default",
+                        "operation": "pop"
+                      },
+                      {
+                        "entry-type": "srl_nokia-common:ldp",
+                        "label-value": 102,
+                        "last-app-update": "2025-03-24T13:35:20.731Z",
+                        "next-hop-group": "41649525533",
+                        "operation": "swap"
+                      },
+                      {
+                        "entry-type": "srl_nokia-common:ldp",
+                        "label-value": 103,
+                        "last-app-update": "2025-03-24T14:33:23.401Z",
+                        "next-network-instance": "default",
+                        "operation": "pop"
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "name": "mgmt",
+                "route-table": {
+                  "srl_nokia-ip-route-tables:ipv4-unicast": {
+                    "route": [
+                      {
+                        "active": true,
+                        "fib-programming": {
+                          "last-failed-operation-type": "none",
+                          "last-successful-operation-timestamp": "2025-03-24T13:34:56.182Z",
+                          "last-successful-operation-type": "add",
+                          "pending-operation-type": "none",
+                          "suppressed": false
+                        },
+                        "id": 1,
+                        "ipv4-prefix": "0.0.0.0/0",
+                        "last-app-update": "2025-03-24T13:34:56.177Z",
+                        "leakable": false,
+                        "metric": 0,
+                        "next-hop-group": "41649525518",
+                        "next-hop-group-network-instance": "mgmt",
+                        "origin-network-instance": "mgmt",
+                        "preference": 5,
+                        "resilient-hash": false,
+                        "route-owner": "dhcp_client_mgr",
+                        "route-type": "srl_nokia-common:dhcp"
+                      },
+                      {
+                        "active": false,
+                        "fib-programming": {
+                          "last-failed-operation-type": "none",
+                          "last-successful-operation-timestamp": "2025-03-24T13:35:02.716Z",
+                          "last-successful-operation-type": "add",
+                          "pending-operation-type": "none",
+                          "suppressed": false
+                        },
+                        "id": 0,
+                        "ipv4-prefix": "172.20.20.0/24",
+                        "last-app-update": "2025-03-24T13:35:02.715Z",
+                        "leakable": false,
+                        "metric": 0,
+                        "next-hop-group": "41649525523",
+                        "next-hop-group-network-instance": "mgmt",
+                        "origin-network-instance": "mgmt",
+                        "preference": 5,
+                        "resilient-hash": false,
+                        "route-owner": "linux_mgr",
+                        "route-type": "srl_nokia-common:linux"
+                      },
+                      {
+                        "active": true,
+                        "fib-programming": {
+                          "last-failed-operation-type": "none",
+                          "last-successful-operation-timestamp": "2025-03-24T13:35:02.716Z",
+                          "last-successful-operation-type": "add",
+                          "pending-operation-type": "none",
+                          "suppressed": false
+                        },
+                        "id": 1,
+                        "ipv4-prefix": "172.20.20.0/24",
+                        "last-app-update": "2025-03-24T13:35:02.716Z",
+                        "leakable": false,
+                        "metric": 0,
+                        "next-hop-group": "41649525524",
+                        "next-hop-group-network-instance": "mgmt",
+                        "origin-network-instance": "mgmt",
+                        "preference": 0,
+                        "resilient-hash": false,
+                        "route-owner": "net_inst_mgr",
+                        "route-type": "srl_nokia-common:local"
+                      },
+                      {
+                        "active": true,
+                        "fib-programming": {
+                          "last-failed-operation-type": "none",
+                          "last-successful-operation-timestamp": "2025-03-24T13:35:02.716Z",
+                          "last-successful-operation-type": "add",
+                          "pending-operation-type": "none",
+                          "suppressed": false
+                        },
+                        "id": 1,
+                        "ipv4-prefix": "172.20.20.3/32",
+                        "last-app-update": "2025-03-24T13:35:02.716Z",
+                        "leakable": false,
+                        "metric": 0,
+                        "next-hop-group": "41649525522",
+                        "next-hop-group-network-instance": "mgmt",
+                        "origin-network-instance": "mgmt",
+                        "preference": 0,
+                        "resilient-hash": false,
+                        "route-owner": "net_inst_mgr",
+                        "route-type": "srl_nokia-common:host"
+                      },
+                      {
+                        "active": true,
+                        "fib-programming": {
+                          "last-failed-operation-type": "none",
+                          "last-successful-operation-timestamp": "2025-03-24T13:35:02.716Z",
+                          "last-successful-operation-type": "add",
+                          "pending-operation-type": "none",
+                          "suppressed": false
+                        },
+                        "id": 1,
+                        "ipv4-prefix": "172.20.20.255/32",
+                        "last-app-update": "2025-03-24T13:35:02.716Z",
+                        "leakable": false,
+                        "metric": 0,
+                        "next-hop-group": "41649525525",
+                        "next-hop-group-network-instance": "mgmt",
+                        "origin-network-instance": "mgmt",
+                        "preference": 0,
+                        "resilient-hash": false,
+                        "route-owner": "net_inst_mgr",
+                        "route-type": "srl_nokia-common:host"
+                      }
+                    ],
+                    "route-summary": {
+                      "route-type": [
+                        {
+                          "active-routes": 1,
+                          "ip-route-type-name": "srl_nokia-common:dhcp"
+                        },
+                        {
+                          "active-routes": 2,
+                          "ip-route-type-name": "srl_nokia-common:host"
+                        },
+                        {
+                          "active-routes": 1,
+                          "ip-route-type-name": "srl_nokia-common:linux"
+                        },
+                        {
+                          "active-routes": 1,
+                          "ip-route-type-name": "srl_nokia-common:local"
+                        }
+                      ]
+                    },
+                    "statistics": {
+                      "active-routes": 4,
+                      "active-routes-with-ecmp": 0,
+                      "fib-failed-routes": 0,
+                      "resilient-hash-routes": 0,
+                      "total-routes": "5"
+                    }
+                  },
+                  "srl_nokia-ip-route-tables:ipv6-unicast": {
+                    "route": [
+                      {
+                        "active": true,
+                        "fib-programming": {
+                          "last-failed-operation-type": "none",
+                          "last-successful-operation-timestamp": "2025-03-24T13:34:56.970Z",
+                          "last-successful-operation-type": "add",
+                          "pending-operation-type": "none",
+                          "suppressed": false
+                        },
+                        "id": 1,
+                        "ipv6-prefix": "::/0",
+                        "last-app-update": "2025-03-24T13:34:56.968Z",
+                        "leakable": false,
+                        "metric": 0,
+                        "next-hop-group": "41649525519",
+                        "next-hop-group-network-instance": "mgmt",
+                        "origin-network-instance": "mgmt",
+                        "preference": 5,
+                        "resilient-hash": false,
+                        "route-owner": "dhcp_client_mgr",
+                        "route-type": "srl_nokia-common:dhcp"
+                      },
+                      {
+                        "active": false,
+                        "fib-programming": {
+                          "last-failed-operation-type": "none",
+                          "last-successful-operation-timestamp": "2025-03-24T13:34:58.400Z",
+                          "last-successful-operation-type": "add",
+                          "pending-operation-type": "none",
+                          "suppressed": false
+                        },
+                        "id": 0,
+                        "ipv6-prefix": "3fff:172:20:20::/64",
+                        "last-app-update": "2025-03-24T13:34:58.389Z",
+                        "leakable": false,
+                        "metric": 0,
+                        "next-hop-group": "41649525520",
+                        "next-hop-group-network-instance": "mgmt",
+                        "origin-network-instance": "mgmt",
+                        "preference": 5,
+                        "resilient-hash": false,
+                        "route-owner": "linux_mgr",
+                        "route-type": "srl_nokia-common:linux"
+                      },
+                      {
+                        "active": true,
+                        "fib-programming": {
+                          "last-failed-operation-type": "none",
+                          "last-successful-operation-timestamp": "2025-03-24T13:34:58.400Z",
+                          "last-successful-operation-type": "add",
+                          "pending-operation-type": "none",
+                          "suppressed": false
+                        },
+                        "id": 1,
+                        "ipv6-prefix": "3fff:172:20:20::/64",
+                        "last-app-update": "2025-03-24T13:34:58.399Z",
+                        "leakable": false,
+                        "metric": 0,
+                        "next-hop-group": "41649525521",
+                        "next-hop-group-network-instance": "mgmt",
+                        "origin-network-instance": "mgmt",
+                        "preference": 0,
+                        "resilient-hash": false,
+                        "route-owner": "net_inst_mgr",
+                        "route-type": "srl_nokia-common:local"
+                      },
+                      {
+                        "active": true,
+                        "fib-programming": {
+                          "last-failed-operation-type": "none",
+                          "last-successful-operation-timestamp": "2025-03-24T13:34:58.400Z",
+                          "last-successful-operation-type": "add",
+                          "pending-operation-type": "none",
+                          "suppressed": false
+                        },
+                        "id": 1,
+                        "ipv6-prefix": "3fff:172:20:20::3/128",
+                        "last-app-update": "2025-03-24T13:34:58.399Z",
+                        "leakable": false,
+                        "metric": 0,
+                        "next-hop-group": "41649525522",
+                        "next-hop-group-network-instance": "mgmt",
+                        "origin-network-instance": "mgmt",
+                        "preference": 0,
+                        "resilient-hash": false,
+                        "route-owner": "net_inst_mgr",
+                        "route-type": "srl_nokia-common:host"
+                      }
+                    ],
+                    "route-summary": {
+                      "route-type": [
+                        {
+                          "active-routes": 1,
+                          "ip-route-type-name": "srl_nokia-common:dhcp"
+                        },
+                        {
+                          "active-routes": 1,
+                          "ip-route-type-name": "srl_nokia-common:host"
+                        },
+                        {
+                          "active-routes": 1,
+                          "ip-route-type-name": "srl_nokia-common:linux"
+                        },
+                        {
+                          "active-routes": 1,
+                          "ip-route-type-name": "srl_nokia-common:local"
+                        }
+                      ]
+                    },
+                    "statistics": {
+                      "active-routes": 3,
+                      "active-routes-with-ecmp": 0,
+                      "fib-failed-routes": 0,
+                      "resilient-hash-routes": 0,
+                      "total-routes": "4"
+                    }
+                  },
+                  "srl_nokia-ip-route-tables:next-hop": [
+                    {
+                      "index": "3",
+                      "type": "srl_nokia-ip-route-tables:broadcast"
+                    },
+                    {
+                      "index": "41649525518",
+                      "ip-address": "172.20.20.1",
+                      "subinterface": "mgmt0.0",
+                      "type": "srl_nokia-ip-route-tables:direct"
+                    },
+                    {
+                      "index": "41649525519",
+                      "ip-address": "3fff:172:20:20::1",
+                      "subinterface": "mgmt0.0",
+                      "type": "srl_nokia-ip-route-tables:direct"
+                    },
+                    {
+                      "index": "41649525520",
+                      "ip-address": "3fff:172:20:20::",
+                      "subinterface": "mgmt0.0",
+                      "type": "srl_nokia-ip-route-tables:direct"
+                    },
+                    {
+                      "index": "41649525521",
+                      "ip-address": "3fff:172:20:20::3",
+                      "subinterface": "mgmt0.0",
+                      "type": "srl_nokia-ip-route-tables:direct"
+                    },
+                    {
+                      "index": "41649525522",
+                      "type": "srl_nokia-ip-route-tables:extract"
+                    },
+                    {
+                      "index": "41649525523",
+                      "ip-address": "172.20.20.0",
+                      "subinterface": "mgmt0.0",
+                      "type": "srl_nokia-ip-route-tables:direct"
+                    },
+                    {
+                      "index": "41649525524",
+                      "ip-address": "172.20.20.3",
+                      "subinterface": "mgmt0.0",
+                      "type": "srl_nokia-ip-route-tables:direct"
+                    }
+                  ],
+                  "srl_nokia-ip-route-tables:next-hop-group": [
+                    {
+                      "backup-next-hop-group": "0",
+                      "fib-programming": {
+                        "last-failed-operation-type": "none",
+                        "last-successful-operation-timestamp": "2025-03-24T13:34:56.182Z",
+                        "last-successful-operation-type": "add",
+                        "pending-operation-type": "none"
+                      },
+                      "index": "41649525518",
+                      "next-hop": [
+                        {
+                          "id": 0,
+                          "next-hop": "41649525518",
+                          "resolved": "not-applicable"
+                        }
+                      ]
+                    },
+                    {
+                      "backup-next-hop-group": "0",
+                      "fib-programming": {
+                        "last-failed-operation-type": "none",
+                        "last-successful-operation-timestamp": "2025-03-24T13:34:56.970Z",
+                        "last-successful-operation-type": "add",
+                        "pending-operation-type": "none"
+                      },
+                      "index": "41649525519",
+                      "next-hop": [
+                        {
+                          "id": 0,
+                          "next-hop": "41649525519",
+                          "resolved": "not-applicable"
+                        }
+                      ]
+                    },
+                    {
+                      "backup-next-hop-group": "0",
+                      "fib-programming": {
+                        "last-failed-operation-type": "none",
+                        "last-successful-operation-timestamp": "2025-03-24T13:34:58.390Z",
+                        "last-successful-operation-type": "add",
+                        "pending-operation-type": "none"
+                      },
+                      "index": "41649525520",
+                      "next-hop": [
+                        {
+                          "id": 0,
+                          "next-hop": "41649525520",
+                          "resolved": "not-applicable"
+                        }
+                      ]
+                    },
+                    {
+                      "backup-next-hop-group": "0",
+                      "fib-programming": {
+                        "last-failed-operation-type": "none",
+                        "last-successful-operation-timestamp": "2025-03-24T13:34:58.400Z",
+                        "last-successful-operation-type": "add",
+                        "pending-operation-type": "none"
+                      },
+                      "index": "41649525521",
+                      "next-hop": [
+                        {
+                          "id": 0,
+                          "next-hop": "41649525521",
+                          "resolved": "not-applicable"
+                        }
+                      ]
+                    },
+                    {
+                      "backup-next-hop-group": "0",
+                      "fib-programming": {
+                        "last-failed-operation-type": "none",
+                        "last-successful-operation-timestamp": "2025-03-24T13:34:58.400Z",
+                        "last-successful-operation-type": "add",
+                        "pending-operation-type": "none"
+                      },
+                      "index": "41649525522",
+                      "next-hop": [
+                        {
+                          "id": 0,
+                          "next-hop": "41649525522",
+                          "resolved": "not-applicable"
+                        }
+                      ]
+                    },
+                    {
+                      "backup-next-hop-group": "0",
+                      "fib-programming": {
+                        "last-failed-operation-type": "none",
+                        "last-successful-operation-timestamp": "2025-03-24T13:35:02.716Z",
+                        "last-successful-operation-type": "add",
+                        "pending-operation-type": "none"
+                      },
+                      "index": "41649525523",
+                      "next-hop": [
+                        {
+                          "id": 0,
+                          "next-hop": "41649525523",
+                          "resolved": "not-applicable"
+                        }
+                      ]
+                    },
+                    {
+                      "backup-next-hop-group": "0",
+                      "fib-programming": {
+                        "last-failed-operation-type": "none",
+                        "last-successful-operation-timestamp": "2025-03-24T13:35:02.716Z",
+                        "last-successful-operation-type": "add",
+                        "pending-operation-type": "none"
+                      },
+                      "index": "41649525524",
+                      "next-hop": [
+                        {
+                          "id": 0,
+                          "next-hop": "41649525524",
+                          "resolved": "not-applicable"
+                        }
+                      ]
+                    },
+                    {
+                      "backup-next-hop-group": "0",
+                      "fib-programming": {
+                        "last-failed-operation-type": "none",
+                        "last-successful-operation-timestamp": "2025-03-24T13:35:02.716Z",
+                        "last-successful-operation-type": "add",
+                        "pending-operation-type": "none"
+                      },
+                      "index": "41649525525",
+                      "next-hop": [
+                        {
+                          "id": 0,
+                          "next-hop": "3",
+                          "resolved": "not-applicable"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+]

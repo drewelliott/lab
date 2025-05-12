@@ -1,0 +1,27 @@
+>>> for i in nhgs:
+...     print(f"index: {i['index']} next-hop {i['next-hop'][0]['next-hop']} resolved: {i['next-hop'][0]['resolved']}")
+... 
+index: 41137380926 next-hop 41137380925 resolved: not-applicable
+index: 41137380927 next-hop 41137380926 resolved: not-applicable
+index: 41137380928 next-hop 41137380927 resolved: not-applicable
+index: 41137380929 next-hop 41137380928 resolved: not-applicable
+index: 41137380930 next-hop 3 resolved: not-applicable
+index: 41137380931 next-hop 41137380929 resolved: not-applicable
+index: 41137380932 next-hop 41137380930 resolved: not-applicable
+index: 41137380933 next-hop 41137380931 resolved: not-applicable
+index: 41137380934 next-hop 41137380932 resolved: not-applicable
+index: 41137380935 next-hop 41137380933 resolved: true
+>>> for i in nhs:
+...     print(i)
+... 
+{'index': '3', 'type': 'srl_nokia-ip-route-tables:broadcast'}
+{'index': '41137380925', 'type': 'srl_nokia-ip-route-tables:extract'}
+{'index': '41137380926', 'type': 'srl_nokia-ip-route-tables:extract'}
+{'index': '41137380927', 'ip-address': '10.1.2.1', 'subinterface': 'ethernet-1/1.0', 'type': 'srl_nokia-ip-route-tables:direct'}
+{'index': '41137380928', 'type': 'srl_nokia-ip-route-tables:extract'}
+{'index': '41137380929', 'ip-address': '10.1.2.2', 'subinterface': 'ethernet-1/1.0', 'type': 'srl_nokia-ip-route-tables:direct'}
+{'index': '41137380930', 'ip-address': '10.1.2.2', 'mpls': {'entropy-label-transmit': False, 'pushed-mpls-label-stack': [200]}, 'subinterface': 'ethernet-1/1.0', 'type': 'srl_nokia-ip-route-tables:mpls'}
+{'index': '41137380931', 'ip-address': '10.1.2.2', 'mpls': {'entropy-label-transmit': False, 'pushed-mpls-label-stack': [201]}, 'subinterface': 'ethernet-1/1.0', 'type': 'srl_nokia-ip-route-tables:mpls'}
+{'index': '41137380932', 'network-instance': 'default', 'resolving-tunnel': {'ip-prefix': '10.0.0.3/32', 'tunnel-id': 65538, 'tunnel-owner': 'ldp_mgr', 'tunnel-type': 'srl_nokia-common:ldp'}, 'type': 'srl_nokia-ip-route-tables:tunnel'}
+{'index': '41137380933', 'ip-address': '10.0.0.3', 'resolving-tunnel': {'ip-prefix': '10.0.0.3/32', 'next-hop-group': '41137380934', 'tunnel-id': 65538, 'tunnel-owner': 'ldp_mgr', 'tunnel-type': 'srl_nokia-common:ldp'}, 'type': 'srl_nokia-ip-route-tables:indirect'}
+>>>

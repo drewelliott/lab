@@ -1,0 +1,52 @@
+name: gre
+
+mgmt:  
+  network: srl-gre
+  ipv4-subnet: 10.81.81.0/24 
+
+topology:
+  kinds:
+  nodes:
+    pe1:
+      kind: nokia_sros
+      type: sr-1
+      image: vrnetlab/vr-sros:24.10.R2
+      license: /opt/licenses/license-sros24.txt
+      mgmt-ipv4: 10.81.81.2
+
+#    pe2:
+#      kind: nokia_srlinux
+#      type: ixrx1b
+#      image: ghcr.io/nokia/srlinux:24.10.1
+#      license: /opt/licenses/license-srl24-10.txt
+#      mgmt-ipv4: 10.81.81.3
+
+    pe2:
+      kind: nokia_sros
+      type: sr-1
+      image: vrnetlab/vr-sros:24.10.R2
+      license: /opt/licenses/license-sros24.txt
+      mgmt-ipv4: 10.81.81.3
+
+    pe3:
+      kind: nokia_sros
+      type: sr-1
+      image: vrnetlab/vr-sros:24.10.R2
+      license: /opt/licenses/license-sros24.txt
+      mgmt-ipv4: 10.81.81.4
+
+    client1:
+      kind: linux
+      image: alpine:latest
+
+    client2:
+      kind: linux
+      image: alpine:latest
+
+
+  links:
+    - endpoints: ["pe1:eth1", "client1:eth1"]
+    - endpoints: ["pe1:eth2", "pe2:eth2"]
+    - endpoints: ["pe1:eth3", "pe3:eth1"]
+    - endpoints: ["pe2:eth1", "client2:eth1"]
+    - endpoints: ["pe2:eth3", "pe3:eth2"]

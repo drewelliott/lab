@@ -1,0 +1,93 @@
+[
+  {
+    "source": "172.20.20.4:57401",
+    "timestamp": 1741906318319154169,
+    "time": "2025-03-13T22:51:58.319154169Z",
+    "updates": [
+      {
+        "Path": "srl_nokia-network-instance:network-instance[name=default]/route-table",
+        "values": {
+          "srl_nokia-network-instance:network-instance/route-table": {
+            "srl_nokia-ip-route-tables:next-hop": [
+              {
+                "index": "3",
+                "type": "srl_nokia-ip-route-tables:broadcast"
+              },
+              {
+                "index": "41137380925",
+                "type": "srl_nokia-ip-route-tables:extract"
+              },
+              {
+                "index": "41137380926",
+                "type": "srl_nokia-ip-route-tables:extract"
+              },
+              {
+                "index": "41137380927",
+                "ip-address": "10.1.2.1",
+                "subinterface": "ethernet-1/1.0",
+                "type": "srl_nokia-ip-route-tables:direct"
+              },
+              {
+                "index": "41137380928",
+                "type": "srl_nokia-ip-route-tables:extract"
+              },
+              {
+                "index": "41137380929",
+                "ip-address": "10.1.2.2",
+                "subinterface": "ethernet-1/1.0",
+                "type": "srl_nokia-ip-route-tables:direct"
+              },
+              {
+                "index": "41137380930",
+                "ip-address": "10.1.2.2",
+                "mpls": {
+                  "entropy-label-transmit": false,
+                  "pushed-mpls-label-stack": [
+                    200
+                  ]
+                },
+                "subinterface": "ethernet-1/1.0",
+                "type": "srl_nokia-ip-route-tables:mpls"
+              },
+              {
+                "index": "41137380931",
+                "ip-address": "10.1.2.2",
+                "mpls": {
+                  "entropy-label-transmit": false,
+                  "pushed-mpls-label-stack": [
+                    201
+                  ]
+                },
+                "subinterface": "ethernet-1/1.0",
+                "type": "srl_nokia-ip-route-tables:mpls"
+              },
+              {
+                "index": "41137380932",
+                "network-instance": "default",
+                "resolving-tunnel": {
+                  "ip-prefix": "10.0.0.3/32",
+                  "tunnel-id": 65538,
+                  "tunnel-owner": "ldp_mgr",
+                  "tunnel-type": "srl_nokia-common:ldp"
+                },
+                "type": "srl_nokia-ip-route-tables:tunnel"
+              },
+              {
+                "index": "41137380933",
+                "ip-address": "10.0.0.3",
+                "resolving-tunnel": {
+                  "ip-prefix": "10.0.0.3/32",
+                  "next-hop-group": "41137380934",
+                  "tunnel-id": 65538,
+                  "tunnel-owner": "ldp_mgr",
+                  "tunnel-type": "srl_nokia-common:ldp"
+                },
+                "type": "srl_nokia-ip-route-tables:indirect"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+]
