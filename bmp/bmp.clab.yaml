@@ -1,0 +1,31 @@
+name: bmp
+
+mgmt:
+  network: bmp-net
+  ipv4-subnet: 10.13.0.0/24
+
+topology:
+  nodes:
+    srl:
+      kind: nokia_srlinux
+      image: ghcr.io/nokia/srlinux:latest
+      startup-config: configs/srl.partial.cfg
+      mgmt-ipv4: 10.13.0.128
+      
+    junos:
+      kind: juniper_vjunosrouter
+      image: vrnetlab/juniper_vjunos-router:24.2R1-S2.5
+      startup-config: configs/junos.cfg
+      mgmt-ipv4: 10.13.0.129
+
+    ceos:
+      kind: arista_ceos
+      image: ceos:4.33.3F
+      mgmt-ipv4: 10.13.0.130
+      startup-config: configs/ceos.cfg
+      binds:
+        - interface_mapping.json:/mnt/flash/EosIntfMapping.json:ro
+
+  links:
+    - endpoints: ["srl:e1-1", "junos:ge-0/0/0"]
+    - endpoints: ["srl:e1-2", "ceos:eth1"]
