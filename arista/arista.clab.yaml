@@ -1,0 +1,66 @@
+name: arista
+
+mgmt:
+  network: arista-net
+  ipv4-subnet: 10.7.0.0/24
+
+topology:
+
+  kinds: 
+    arista_ceos:
+      image: ceos:4.33.3F 
+
+  nodes:
+    r1:
+      kind: arista_ceos
+      mgmt-ipv4: 10.7.0.11
+      startup-config: configs/r1.cfg
+      binds:
+        - interface_mapping.json:/mnt/flash/EosIntfMapping.json:ro
+      
+    r2:
+      kind: arista_ceos
+      mgmt-ipv4: 10.7.0.22
+      startup-config: configs/r2.cfg
+      binds:
+        - interface_mapping.json:/mnt/flash/EosIntfMapping.json:ro
+
+    r3:
+      kind: arista_ceos
+      mgmt-ipv4: 10.7.0.33
+      startup-config: configs/r3.cfg
+      binds:
+        - interface_mapping.json:/mnt/flash/EosIntfMapping.json:ro
+
+    r4:
+      kind: arista_ceos
+      mgmt-ipv4: 10.7.0.44
+      startup-config: configs/r4.cfg
+      binds:
+        - interface_mapping.json:/mnt/flash/EosIntfMapping.json:ro
+
+    r5:
+      kind: arista_ceos
+      mgmt-ipv4: 10.7.0.55
+      startup-config: configs/r5.cfg
+      binds:
+        - interface_mapping.json:/mnt/flash/EosIntfMapping.json:ro
+
+    r6:
+      kind: arista_ceos
+      mgmt-ipv4: 10.7.0.66
+      startup-config: configs/r6.cfg
+      binds:
+        - interface_mapping.json:/mnt/flash/EosIntfMapping.json:ro
+
+
+  links:
+    - endpoints: ["r1:eth1", "r2:eth1"]
+    - endpoints: ["r2:eth2", "r3:eth1"]
+    - endpoints: ["r3:eth2", "r4:eth1"]
+    - endpoints: ["r4:eth2", "r5:eth1"]
+    - endpoints: ["r5:eth2", "r6:eth1"]
+    - endpoints: ["r6:eth2", "r1:eth2"]
+    - endpoints: ["r1:eth3", "r4:eth3"]
+    - endpoints: ["r2:eth3", "r5:eth3"]
+    - endpoints: ["r3:eth3", "r6:eth3"]
