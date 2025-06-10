@@ -1,0 +1,78 @@
+name: juniper
+
+mgmt:
+  network: juniper-net
+  ipv4-subnet: 10.8.0.0/24
+
+topology:
+
+  kinds:
+    juniper_vjunosrouter:
+      image: vrnetlab/juniper_vjunos-router:24.2R1-S2.5
+
+  nodes:
+    r1:
+      kind: juniper_vjunosrouter
+      mgmt-ipv4: 10.8.0.11
+      labels:
+        graph-posX: "555"
+        graph-posY: "285"
+        graph-groupLabelPos: bottom-center
+      startup-config: configs/r1.cfg
+
+    r2:
+      kind: juniper_vjunosrouter
+      mgmt-ipv4: 10.8.0.22
+      labels:
+        graph-posX: "485"
+        graph-posY: "325"
+        graph-groupLabelPos: bottom-center
+      startup-config: configs/r2.cfg
+
+    r3:
+      kind: juniper_vjunosrouter
+      mgmt-ipv4: 10.8.0.33
+      labels:
+        graph-posX: "485"
+        graph-posY: "395"
+        graph-groupLabelPos: bottom-center
+      startup-config: configs/r3.cfg
+
+    r4:
+      kind: juniper_vjunosrouter
+      mgmt-ipv4: 10.8.0.44
+      labels:
+        graph-posX: "555"
+        graph-posY: "435"
+        graph-groupLabelPos: bottom-center
+      startup-config: configs/r4.cfg
+
+    r5:
+      kind: juniper_vjunosrouter
+      mgmt-ipv4: 10.8.0.55
+      labels:
+        graph-posX: "625"
+        graph-posY: "395"
+        graph-groupLabelPos: bottom-center
+      startup-config: configs/r5.cfg
+
+    r6:
+      kind: juniper_vjunosrouter
+      mgmt-ipv4: 10.8.0.66
+      labels:
+        graph-posX: "625"
+        graph-posY: "325"
+        graph-groupLabelPos: bottom-center
+      startup-config: configs/r6.cfg
+
+
+  links:
+    - endpoints: [ "r1:ge-0/0/1", "r2:ge-0/0/1" ]
+    - endpoints: [ "r2:ge-0/0/2", "r3:ge-0/0/1" ]
+    - endpoints: [ "r3:ge-0/0/2", "r4:ge-0/0/1" ]
+    - endpoints: [ "r4:ge-0/0/2", "r5:ge-0/0/1" ]
+    - endpoints: [ "r5:ge-0/0/2", "r6:ge-0/0/1" ]
+    - endpoints: [ "r6:ge-0/0/2", "r1:ge-0/0/2" ]
+    - endpoints: [ "r1:ge-0/0/3", "r4:ge-0/0/3" ]
+    - endpoints: [ "r2:ge-0/0/3", "r5:ge-0/0/3" ]
+    - endpoints: [ "r3:ge-0/0/3", "r6:ge-0/0/3" ]
